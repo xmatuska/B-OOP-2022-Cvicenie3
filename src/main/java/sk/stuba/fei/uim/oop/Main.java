@@ -1,25 +1,16 @@
 package sk.stuba.fei.uim.oop;
 
 import sk.stuba.fei.uim.oop.auto.Auto;
+import sk.stuba.fei.uim.oop.auto.Vozidlo;
 
 public class Main {
 
     public static void main(String[] args) {
-        Auto skoda = new Auto();
-        Auto bmw = new Auto(50);
+        Vozidlo bicykel = new Vozidlo("SOBI 20", 2);
+        Auto volvo = new Auto("Volvo", "XC90",4);
 
-        System.out.println("skoda");
-        System.out.println(skoda.stav());
-
-        skoda.jazdi(100);
-        System.out.println(skoda.stav());
-
-        System.out.println("bmw");
-        System.out.println(bmw.stav());
-
-        bmw.jazdi(100);
-        System.out.println(bmw.stav());
-
+        bicykel.trubit();
+        volvo.trubit();
 
     }
 }
